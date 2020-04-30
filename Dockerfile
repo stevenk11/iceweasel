@@ -14,9 +14,10 @@ RUN sed -i -e "s/deb.debian/ftp.hk.debian/g" /etc/apt/sources.list \
 	fonts-noto \
 	fonts-noto-cjk \
 	fonts-noto-color-emoji \
+	fonts-liberation \
+	fonts-symbola \
 	&& apt-get install -y --no-install-recommends \
-	fcitx fcitx-sunpinyin xfonts-wqy \
-	fonts-inconsolata \
+	fcitx fcitx-sunpinyin \
 	fcitx-frontend-gtk3 fcitx-ui-classic \
 	&& rm -rf /var/lib/apt/lists/*
 
