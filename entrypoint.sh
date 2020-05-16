@@ -1,4 +1,4 @@
-startibus
+ibus-daemon -drx
 if [ -e /dev/snd ]; then
 	exec apulse firefox "$@"
 else
