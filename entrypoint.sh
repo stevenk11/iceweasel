@@ -1,6 +1,6 @@
 ibus-daemon -drx
 if [ -e /dev/snd ]; then
-	exec apulse firefox "$@"
+	apulse firefox "$@"
 else
-	exec firefox "$@"
+	firefox "$@"
 fi
